@@ -15,6 +15,6 @@ prijmeni = jmeno_a_prijmeni[1]
 print(krestni.capitalize() + " " + prijmeni.capitalize())
 
 if len(krestni) > 5:
-    print(krestni[0] + ". " + prijmeni.capitalize())
+    print(krestni[0].upper() + ". " + prijmeni.capitalize())
 else:
     print(krestni.capitalize() + " " + prijmeni.capitalize())
