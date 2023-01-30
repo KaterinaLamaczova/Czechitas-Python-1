@@ -16,7 +16,7 @@ for student in body:
 
 with open("prospech.json", mode="w", encoding="UTF-8") as soubor_prospech:
     #soubor_prospech.write(json.dumps(prospech))
-    json.dump(prospech, soubor_prospech)
+    json.dump(prospech, soubor_prospech, ensure_ascii=False, indent=4)
 
 #bonus
 
@@ -48,4 +48,4 @@ for student in body_celkem:
 
 with open("znamky.json", mode="w", encoding="UTF-8") as soubor_znamky:
     #soubor_znamky.write(json.dumps(znamky))
-    json.dump(znamky, soubor_znamky)
+    json.dump(znamky, soubor_znamky, ensure_ascii=False, indent=4)
