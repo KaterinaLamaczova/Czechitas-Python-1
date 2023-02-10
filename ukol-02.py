@@ -9,9 +9,9 @@ sklad = {
 }
 
 kod = input("Zadejte kód součástky: ")
-kolik = int(input("Zadejte množství: "))
 
 if kod in sklad:
+    kolik = int(input("Zadejte množství: "))
     if kolik > sklad[kod]:
         print(f"Na skladě je pouze {sklad[kod]} kusů součástky {kod}")
         sklad.pop(kod)
