@@ -2,7 +2,7 @@
 
 # Fce pro ověření tel. čísla:
 
-def over_tel(tel_cislo: str):
+def over_tel(tel_cislo: str) -> bool:
     """
     Fce ověří platnost telefonního čísla zadaného uživatelem.
     1 povinný parametr = tel. číslo (str)
@@ -23,7 +23,7 @@ def over_tel(tel_cislo: str):
 
 # Funkce pro výpočet ceny SMS zprávy:
 
-def cena_SMS(sms: str):
+def cena_SMS(sms: str) -> int:
     """
     Fce vypočítá cenu SMS zprávy na základě její délky.
     1 povninný parametr = SMS zpráva (str)
