@@ -3,8 +3,7 @@ import json
 #ukol-03
 
 with open("body.json", encoding="UTF-8") as soubor:
-    data = soubor.read()
-body = (json.loads(data))
+    body = json.load(soubor)
 
 prospech = {}
 
@@ -21,8 +20,7 @@ with open("prospech.json", mode="w", encoding="UTF-8") as soubor_prospech:
 #bonus
 
 with open("bonusy.json", encoding="UTF-8") as soubor_bonusy:
-    data_bonusy = soubor_bonusy.read()
-body_bonusy = (json.loads(data_bonusy))
+    body_bonusy = json.load(soubor_bonusy)
 
 body_celkem = {}
 
